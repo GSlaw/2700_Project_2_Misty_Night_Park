@@ -34,6 +34,24 @@
       "type": "VEC3"
     },
     {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 33231,
+      "max": [
+        0.9998329281806946,
+        0.9999006986618042,
+        0.9999945759773254,
+        1.0
+      ],
+      "min": [
+        -0.9999515414237976,
+        -0.9998681545257568,
+        -0.9999900460243225,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
       "bufferView": 1,
       "componentType": 5126,
       "count": 33231,
@@ -76,7 +94,7 @@
       "source": "https://sketchfab.com/3d-models/man-in-a-suit-scanned-model-94a820c49db24189a617a0b48061085a",
       "title": "Man in a suit. Scanned Model."
     },
-    "generator": "Sketchfab-11.68.0",
+    "generator": "Sketchfab-11.92.0",
     "version": "2.0"
   },
   "bufferViews": [
@@ -101,34 +119,61 @@
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 531696,
+      "byteOffset": 2049312,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 2049312,
+      "byteLength": 2581008,
       "uri": "scene.bin"
     }
   ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
   "extensionsUsed": [
-    "KHR_materials_unlit"
+    "KHR_materials_pbrSpecularGlossiness"
   ],
   "images": [
     {
-      "uri": "textures/GTP_BMan_Jack_07_Stg_Lsn_Adl_Ccs_Gry_Mgr_BlendMaterial_baseColor.jpeg"
+      "uri": "textures/GTP_BMan_Jack_07_Stg_Lsn_Adl_Ccs_Gry_Mgr_BlendMaterial_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/GTP_BMan_Jack_07_Stg_Lsn_Adl_Ccs_Gry_Mgr_BlendMaterial_normal.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
       "extensions": {
-        "KHR_materials_unlit": {}
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.07529791742809691,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
       },
       "name": "GTP_BMan_Jack_07_Stg_Lsn_Adl_Ccs_Gry_Mgr_BlendMaterial",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0.0
+      "normalTexture": {
+        "index": 1
       }
     }
   ],
@@ -140,10 +185,11 @@
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TEXCOORD_0": 2,
-            "TEXCOORD_1": 3
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
           },
-          "indices": 4,
+          "indices": 5,
           "material": 0,
           "mode": 4
         }
@@ -156,17 +202,17 @@
         1
       ],
       "matrix": [
-        1.0,
-        3.110325099350288e-16,
-        -8.326672684688667e-17,
+        0.009404832497239113,
+        2.9252086571348062e-18,
+        -7.831096185883322e-19,
         0.0,
-        -8.326672684688674e-17,
-        3.828568672208042e-16,
-        -1.0,
+        -7.831096185883329e-19,
+        3.60070470662938e-18,
+        -0.009404832497239113,
         0.0,
-        -3.110325099350288e-16,
-        1.0,
-        3.828568672208042e-16,
+        -2.9252086571348062e-18,
+        0.009404832497239113,
+        3.60070470662938e-18,
         0.0,
         2.877048371676544e-14,
         4.486231119800246e-30,
@@ -255,6 +301,10 @@
     {
       "sampler": 0,
       "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
     }
   ]
 }
