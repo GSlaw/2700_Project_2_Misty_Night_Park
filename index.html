@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <a-scene>
+    <a-scene fog="type: linear; color: #8ad1f0; near:0; far:200; density: .00000000001">
       <!----------- ASSETS ------------->
       <a-assets>
         <img id="brickTexture"
@@ -99,19 +99,19 @@
       <!-- LEFT -->
         <!-- Background Trees Row 01 -- https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7-->
           <a-gltf-model
-            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-70 0 10"
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-70 0 10" fog="true"
             src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
           </a-gltf-model>
           <a-gltf-model
-            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-70 0 -100"
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-70 0 -100" fog="true"
             src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
           </a-gltf-model>
           <a-gltf-model
-            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-50 0 -220"
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-50 0 -220" fog="true"
             src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
           </a-gltf-model>
           <a-gltf-model
-            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-100 0 -150"
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-100 0 -150" fog="true"
             src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
           </a-gltf-model>
 
@@ -128,38 +128,52 @@
             id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-35 0 -200"
             src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
           </a-gltf-model>
+
+        <!-- Background Trees Row 02 -- https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7 -->
+          <a-gltf-model
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-145 0 0"
+            src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+          </a-gltf-model>
+          <a-gltf-model
+            id="tree01" scale= ".05 .055 .05" rotation="0 90 0" position="-100 0 -80"
+            src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+          </a-gltf-model>      
+          <a-gltf-model
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-135 0 -200"
+            src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+          </a-gltf-model>  
       
         <!-- Foreground Trees -- https://sketchfab.com/3d-models/laurel-tree-low-poly-f1a5baa9d2e24f27a98be75f23f38f35-->
           <a-gltf-model
-            id="tree01" scale= ".08 .08 .02" position="-15 0 0"
+            id="tree01" scale= ".08 .08 .02" position="-15 0 0" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>
           <a-gltf-model
-            id="tree01" scale= ".09 .08 .02" position="-15 0 -12"
+            id="tree01" scale= ".09 .08 .02" position="-15 0 -12" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>
           <a-gltf-model
-            id="tree01" scale= ".07 .08 .02" position="-15 0 -25"
+            id="tree01" scale= ".07 .08 .02" position="-15 0 -25" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>      
           <a-gltf-model
-            id="tree01" scale= ".04 .09 .02" position="-15 0 -42"
+            id="tree01" scale= ".04 .09 .02" position="-15 0 -42" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>      
           <a-gltf-model
-            id="tree01" scale= ".06 .08 .02" position="-15 0 -60"
+            id="tree01" scale= ".06 .08 .02" position="-15 0 -60" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>     
           <a-gltf-model
-            id="tree01" scale= ".05 .08 .02" position="-15 0 -80"
+            id="tree01" scale= ".05 .08 .02" position="-15 0 -80" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>     
           <a-gltf-model
-            id="tree01" scale= ".08 .09 .02" position="12 0 -85"
+            id="tree01" scale= ".08 .09 .02" position="12 0 -85" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>     
           <a-gltf-model
-            id="tree01" scale= ".08 .08 .02" position="10 0 -100"
+            id="tree01" scale= ".08 .08 .02" position="10 0 -100" fog="true"
             src="addModel/laurel_tree_-_low_poly/laurel_tree.glb">
           </a-gltf-model>
       
@@ -189,6 +203,20 @@
           </a-gltf-model>    
           <a-gltf-model
             id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="50 0 -210"
+            src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+          </a-gltf-model>
+
+        <!-- Background Trees Row 03 --https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7-->  
+          <a-gltf-model
+            id="tree01" scale= ".05 .055 .05" rotation="0 90 0" position="150 0 10"
+            src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+          </a-gltf-model>     
+          <a-gltf-model
+            id="tree01" scale= ".05 .06 .05" rotation="0 270 0" position="100 0 -100"
+            src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+          </a-gltf-model>    
+          <a-gltf-model
+            id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="150 0 -210"
             src="addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
           </a-gltf-model>
       
