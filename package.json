@@ -1,35 +1,22 @@
 {
-  "name": "aframe-rain",
-  "version": "1.0.2",
-  "description": "A-Frame rain component",
+  "name": "2700_project_2_misty_night_park",
+  "version": "1.0.0",
+  "description": "Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io).",
   "main": "index.js",
   "scripts": {
-    "all": "npm run build && npm run build-uglify",
-    "build": "webpack index.js build/aframe-rain.js",
-    "build-uglify": "webpack -p index.js build/aframe-rain.min.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/takahirox/aframe-rain.git"
+    "url": "git+https://github.com/GSlaw/2700_Project_2_Misty_Night_Park.git"
   },
-  "keywords": [
-    "aframe",
-    "aframe-vr",
-    "vr",
-    "three",
-    "threejs",
-    "mozvr",
-    "webvr"
-  ],
-  "author": "Takahiro <hogehoge@gachapin.jp> (https://github.com/takahirox)",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/takahirox/aframe-rain/issues"
+    "url": "https://github.com/GSlaw/2700_Project_2_Misty_Night_Park/issues"
   },
-  "homepage": "https://github.com/takahirox/aframe-rain#readme",
-  "devDependencies": {
-    "aframe": "^0.4.0",
-    "three": "^0.135.0",
-    "webpack": "^1.13.3"
+  "homepage": "https://github.com/GSlaw/2700_Project_2_Misty_Night_Park#readme",
+  "dependencies": {
+    "aframe-rain": "^1.0.2"
   }
 }
